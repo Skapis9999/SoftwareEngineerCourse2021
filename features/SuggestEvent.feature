@@ -1,4 +1,5 @@
-Feature 5: Suggest event
+Functional Requirement 5
+Feature: Suggest event
 Background:     
     Given that I am logged in
     And I am a user                                     
