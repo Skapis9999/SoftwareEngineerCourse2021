@@ -1,3 +1,4 @@
+Functional Requirement 3 
 Feature: View Information of organisation/user/event
   
   Scenario:  Viewing Information of user/organisation
