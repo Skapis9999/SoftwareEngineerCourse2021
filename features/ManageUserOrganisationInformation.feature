@@ -1,4 +1,4 @@
-Feature: Manage user/organisation information
+Feature: Manage user or organisation information
   
   Managing Information should be easy and fast
   
@@ -8,7 +8,8 @@ Feature: Manage user/organisation information
     
   Scenario: Sumbit information as a user
     Given that I am the user
-    When My information is blank
+    And my information is blank
+    When I select "Submit information"
     Then I should be allowed to submit information
     | Age  | 21 | maximum of 99 | minimum of 18 |
     | Name | Christos Skapetis | minium 3 characters ||
@@ -16,12 +17,13 @@ Feature: Manage user/organisation information
     | Work | Student|||
     | Interests | Fishing, Reading, Environment|||
     | Past Events | Sfhmmy12, TedX AUTh|||
-    And I should see a message saying "Information successfully submited."
+    And I should see a message saying "Information successfully submitted."
     And I should prompted to my profile page    
     
   Scenario: Edit information as a user
     Given I am the user
     And My information is not blank
+    When I select "Edit information"
     Then I should be allowed to edit information
     | Age  | 21 | maximum of 99 | minimum of 18 |
     | Name | Christos Skapetis | minium 3 characters ||
