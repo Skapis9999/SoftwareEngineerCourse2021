@@ -1,3 +1,7 @@
+As a member of a specific organisation
+So that I can participate in the organisation’s new current volunteer events 
+I want to be informed about the new current volunteer events it organises
+
 Functional Requirement 7
 Feature: Notify a member about event
  
