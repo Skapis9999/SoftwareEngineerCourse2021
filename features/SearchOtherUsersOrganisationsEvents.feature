@@ -1,3 +1,4 @@
+Functional Requirement 2 
 Feature: Search other users/organisations/events
   
   Background:
